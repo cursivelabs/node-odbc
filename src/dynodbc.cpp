@@ -25,7 +25,11 @@ void* LoadSharedLibrary(char *pcDllname, int iMode = 2)
   sDllName += ".dll";
   return (void*)LoadLibraryA(pcDllname);
 #elif defined(__GNUC__) // GNU compiler
+#ifdef __APPLE__
+  sDllName += ".dylib";
+#else
   sDllName += ".so";
+#endif
   void* handle = dlopen(sDllName.c_str(),iMode);
   
   if (!handle) {

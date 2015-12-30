@@ -14,12 +14,12 @@
         "<!(node -e \"require('nan')\")"
       ],
       'defines' : [
-        'UNICODE'
+        'UNICODE',
+        'dynodbc'
       ],
       'conditions' : [
         [ 'OS == "linux"', {
-          'libraries' : [ 
-            '-lodbc' 
+          'libraries' : [
           ],
           'cflags' : [
             '-g'
@@ -27,8 +27,6 @@
         }],
         [ 'OS == "mac"', {
           'libraries' : [
-            '-L/usr/local/lib',
-            '-lodbc' 
           ]
         }],
         [ 'OS=="win"', {
