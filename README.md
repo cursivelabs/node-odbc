@@ -2,8 +2,8 @@ node-odbc
 ---------
 
 This version has been changed to use Dynodbc by default, see Dynodbc below.
-The change allows us to deploy into AWS Lambda where we cant use our own os image
-We only need to package the dynamic odbc lib in our lambda project.
+The change allows us to deploy into AWS Lambda where we cant use our own OS image.
+We only need to package the dynamic odbc library in our Lambda.
 It also supports loading dynamic odbc libraries on a mac.
 
 An asynchronous/synchronous interface for node.js to unixODBC and its supported
