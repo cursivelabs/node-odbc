@@ -27,14 +27,14 @@ two following options:
 ### git
 
 ```bash
-git clone git://github.com/wankdanker/node-odbc.git
+git clone git://github.com/cursivelabs/node-odbc.git
 cd node-odbc
 node-gyp configure build
 ```
 ### npm
 
 ```bash
-npm install odbc
+npm install https://git@github.com/cursivelabs/node-odbc.git
 ```
 
 quick example

@@ -14,7 +14,6 @@
         "<!(node -e \"require('nan')\")"
       ],
       'defines' : [
-        'UNICODE',
         'dynodbc'
       ],
       'conditions' : [
@@ -42,3 +41,4 @@
     }
   ]
 }
+
